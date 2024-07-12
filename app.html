@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christian Purpose Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Discover Your Purpose</h1>
+        <div id="quiz-container">
+            <div id="question"></div>
+            <div id="choices"></div>
+            <p id="progress"></p>
+            <button id="next-button" onclick="nextQuestion()" disabled>Next</button>
+        </div>
+        <div id="result-container">
+            <h2>Your Result</h2>
+            <div id="result"></div>
+            <button onclick="downloadResult()">Download Result</button>
+            <button onclick="downloadQuestions()">Download Questions</button>
+            <button onclick="retakeQuiz()">Retake Quiz</button>
+            <button onclick="showReviewForm()">Leave a Review</button>
+            <button onclick="shareQuiz()">Share Quiz</button>
+        </div>
+        <div id="review-container">
+            <h2>Leave a Review</h2>
+            <textarea id="review-comment" placeholder="Enter your review here..."></textarea>
+            <button onclick="submitReview()">Submit Review</button>
+            <button onclick="restartQuiz()">Restart Quiz</button>
+        </div>
+    </div>
+    <footer>
+        <p>Created by Festus Makau</p>
+        <p>Email: <a href="mailto:festusmakau56@gmail.com">festusmakau56@gmail.com</a></p>
+        <p>Phone: <a href="tel:+254797691583">0797691583</a></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
